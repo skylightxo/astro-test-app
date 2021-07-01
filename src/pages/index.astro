@@ -1,6 +1,6 @@
 ---
-import { TodoList } from '../components/TodoList';
-import AddTodoForm from '../components/AddTodoForm';
+import { TodoList } from '../components/TodoList.jsx';
+import AddTodoForm from '../components/AddTodoForm.vue';
 ---
 
 <!doctype html>
@@ -20,8 +20,8 @@ import AddTodoForm from '../components/AddTodoForm';
 </head>
 <body>
     <main>
-        <AddTodoForm />
-        <TodoList />
+        <AddTodoForm:visible />
+        <TodoList:visible />
     </main>
 </body>
 </html>
