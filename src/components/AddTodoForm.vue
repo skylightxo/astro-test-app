@@ -15,7 +15,10 @@ import { status } from '../constants';
 export default {
     setup() {
         const input = ref('');
-        const handleAddTask = () => addTask({ name: input.value, status: status.ongoing });
+        const handleAddTask = () => {
+            addTask({ name: input.value, status: status.ongoing })
+            input.value = '';
+        };
 
         return {
             input,
